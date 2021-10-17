@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Find Sum and Average</title>
+    
+  </head>
+  <body bgcolor="cray" >
+    <h2 style="text-align: center;">
+      Write a program in any language to read 10 numbers from
+      keyboard and find their sum and average.
+    </h2>
+    
+    <hr />
+
+    <h3>
+        CPP Code:
+    </h3>
+
+    <pre style="font-family: Arial;font-size:20px;">
+    <code >
+      #include < bits/stdc++.h >
+      using namespace std;
+
+      int sum(int arr[])
+      {
+        int ans=0;
+        for(int i=0;i<10;i++)
+          ans+=arr[i];
+        return ans;
+      }
+
+      float average(int arr[])
+      {
+        float ans=0.;
+        for(int i=0;i<10;i++)
+          ans+=arr[i];
+        return ans/10.0;
+      }
+
+      int main()
+      {
+        int arr[10];
+        cout<<"Enter 10 numbers: \n";
+        for(int i=0;i<10;i++)
+          cin>>arr[i];
+        cout<< "Sum is: ";
+        cout<< sum(arr)<< endl;
+        cout<< "Average is: "<< average(arr);
+        return 0;
+      }
+    </code>
+    </pre>
+
+    <hr />
+
+    <section>
+      <kbd style="font-size: 15px;">
+        Enter 10 numbers:
+        <br />
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+      </kbd>
+    </section>
+
+    <hr />
+
+    <section>
+      <samp style="font-size: 15px;">Sum is: 55</samp>
+      <br />
+      <samp style="font-size: 15px;">Average is: 5.5</samp>
+    </section>
+
+    <hr />
+
+    <section>
+      <var style="font-size: 15px;">used variables: arr[] </var>
+    </section>
+
+    <hr />
+
+    <section>
+      <p> style="font-size: 15px;"Time Complexity: O(N)</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <div style="font-size: 15px;">
+        Referance :
+        <a href="https://www.geeksforgeeks.org/program-average-array-iterative-recursive/"target="blank">
+          Link for the Problem
+        </a>
+      </div>
+    </section>
+
+    <hr />
+    <footer style="text-align: center">
+      <small>&copy; T2_2019BTECS00084</small>
+    </footer>
+  </body>
+</html>
